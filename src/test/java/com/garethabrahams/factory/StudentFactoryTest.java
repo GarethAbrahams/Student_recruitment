@@ -10,8 +10,7 @@ public class StudentFactoryTest {
 
     @Test
     public void creatStudent() {
-        String name, surname, id, email, cellphone;
-        Student s = StudentFactory.creatStudent("Gareth", "Abrahams", "1234657980", "garetha6@gmail", "0846549870000");
+        Student s = StudentFactory.creatStudent("Gareth", "Abrahams", "1234657980", "garetha6@gmail", "0846549870000","Cape Town", "CPUT",12000.00);
         Assert.assertEquals("Gareth", s.getName());
     }
 }

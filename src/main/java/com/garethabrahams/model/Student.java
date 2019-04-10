@@ -5,10 +5,22 @@ import javafx.util.Builder;
 public class Student {
 
     private String name, surname, id, email, cellphone, address, school;
-    private int familyIncome;
+    private double familyIncome;
 
     private Student() {
 
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public double getFamilyIncome() {
+        return familyIncome;
     }
 
     public String getName() {
@@ -37,6 +49,10 @@ public class Student {
         this.id = builder.id;
         this.email = builder.email;
         this.cellphone = builder.cellphone;
+        this.address = builder.address;
+        this.school = builder.school;
+        this.familyIncome = builder.familyIncome;
+
     }
 
     public static class Builder {
@@ -45,6 +61,9 @@ public class Student {
         private String id;
         private String email;
         private String cellphone;
+        private String address;
+        private String school;
+        private double familyIncome;
 
         public Builder name(String value) {
             this.name = value;
@@ -70,6 +89,22 @@ public class Student {
             this.cellphone = value;
             return this;
         }
+
+        public Builder address(String value) {
+            this.address = value;
+            return this;
+        }
+
+        public Builder school(String value) {
+            this.school = value;
+            return this;
+        }
+
+        public Builder familyIncome(double value) {
+            this.familyIncome = value;
+            return this;
+        }
+
 
         public Student build() {
             return new Student(this);
