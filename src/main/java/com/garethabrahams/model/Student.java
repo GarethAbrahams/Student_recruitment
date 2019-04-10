@@ -4,7 +4,7 @@ import javafx.util.Builder;
 
 public class Student {
 
-    private String name, surname, id, email, cellphone, address, school;
+    private String name, surname, id, email, cellphone, address;
     private double familyIncome;
 
     private Student() {
@@ -13,10 +13,6 @@ public class Student {
 
     public String getAddress() {
         return address;
-    }
-
-    public String getSchool() {
-        return school;
     }
 
     public double getFamilyIncome() {
@@ -50,7 +46,6 @@ public class Student {
         this.email = builder.email;
         this.cellphone = builder.cellphone;
         this.address = builder.address;
-        this.school = builder.school;
         this.familyIncome = builder.familyIncome;
 
     }
@@ -62,7 +57,6 @@ public class Student {
         private String email;
         private String cellphone;
         private String address;
-        private String school;
         private double familyIncome;
 
         public Builder name(String value) {
@@ -95,10 +89,6 @@ public class Student {
             return this;
         }
 
-        public Builder school(String value) {
-            this.school = value;
-            return this;
-        }
 
         public Builder familyIncome(double value) {
             this.familyIncome = value;
