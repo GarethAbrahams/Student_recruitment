@@ -7,3 +7,7 @@ HR Admin staff accepts paper based forms, tests and interview notes. The process
 
 The Solution
 I would like to make this process electronic. I will like to make an online form (Website) that captures this information and stores it in a database. A HR admin desktop program (Java), that can manage the system and data, and reports that can be retrieved showing data relevant to each process.
+
+
+#### <u>Please see UML Class Diagram below:</u>
+![GitHub Logo](HR_System.jpg)
