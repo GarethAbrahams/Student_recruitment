@@ -1,11 +1,11 @@
 package com.garethabrahams.factory.Staff;
 
-import com.garethabrahams.model.Staff.SupportStaff;
+import com.garethabrahams.model.Staff.HRStaff;
 
-public class SupportStaffFactory {
+public class HRStaffFactory {
 
-    public static SupportStaff createSDA(String name, String surname, String empID, String email, String cellphone, String campus) {
-        return new SupportStaff.Builder()
+    public static HRStaff createSDA(String name, String surname, String empID, String email, String cellphone, String campus) {
+        return new HRStaff.Builder()
                 .name(name)
                 .surname(surname)
                 .empID(empID)

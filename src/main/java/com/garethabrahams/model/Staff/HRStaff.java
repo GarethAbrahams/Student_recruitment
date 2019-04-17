@@ -1,10 +1,10 @@
 package com.garethabrahams.model.Staff;
 
-public class SupportStaff {
+public class HRStaff {
 
     private String name, surname, empID, email, cellphone, campus;
 
-    private SupportStaff() {
+    private HRStaff() {
     }
 
     public String getName() {
@@ -31,7 +31,7 @@ public class SupportStaff {
         return campus;
     }
 
-    public SupportStaff(SupportStaff.Builder builder) {
+    public HRStaff(HRStaff.Builder builder) {
         this.name = builder.name;
         this.surname = builder.surname;
         this.empID = builder.empID;
@@ -48,39 +48,39 @@ public class SupportStaff {
         private String cellphone;
         private String campus;
 
-        public SupportStaff.Builder name(String value) {
+        public HRStaff.Builder name(String value) {
             this.name = value;
             return this;
         }
 
-        public SupportStaff.Builder surname(String value) {
+        public HRStaff.Builder surname(String value) {
             this.surname = value;
             return this;
         }
 
-        public SupportStaff.Builder empID(String value) {
+        public HRStaff.Builder empID(String value) {
             this.empID = value;
             return this;
         }
 
-        public SupportStaff.Builder email(String value) {
+        public HRStaff.Builder email(String value) {
             this.email = value;
             return this;
         }
 
-        public SupportStaff.Builder cellphone(String value) {
+        public HRStaff.Builder cellphone(String value) {
             this.cellphone = value;
             return this;
         }
 
-        public SupportStaff.Builder campus(String value) {
+        public HRStaff.Builder campus(String value) {
             this.campus = value;
             return this;
         }
 
 
-        public SupportStaff build() {
-            return new SupportStaff(this);
+        public HRStaff build() {
+            return new HRStaff(this);
         }
     }
 }

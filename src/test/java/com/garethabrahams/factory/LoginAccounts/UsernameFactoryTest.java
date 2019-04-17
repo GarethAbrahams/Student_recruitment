@@ -1,16 +1,14 @@
 package com.garethabrahams.factory.LoginAccounts;
 
-import com.garethabrahams.model.LoginAccounts.Accounts;
+import com.garethabrahams.model.LoginAccounts.Username;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
-public class AccountsFactoryTest {
+public class UsernameFactoryTest {
 
     @Test
     public void createAccounts() {
-        Accounts acc = AccountsFactory.createAccounts("Gareth","123456");
+        Username acc = UsernameFactory.createAccounts("Gareth");
         Assert.assertEquals("Gareth",acc.getUsername());
     }
 }

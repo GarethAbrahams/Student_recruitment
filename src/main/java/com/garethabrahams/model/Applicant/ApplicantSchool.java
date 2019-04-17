@@ -1,10 +1,10 @@
-package com.garethabrahams.model.Student;
+package com.garethabrahams.model.Applicant;
 
-public class StudentSchool {
+public class ApplicantSchool {
 
     private String schoolName, area, province, yearMatric;
 
-    private StudentSchool() {
+    private ApplicantSchool() {
     }
 
     public String getSchoolname() {
@@ -23,7 +23,7 @@ public class StudentSchool {
         return yearMatric;
     }
 
-    public StudentSchool(StudentSchool.Builder builder) {
+    public ApplicantSchool(ApplicantSchool.Builder builder) {
         this.schoolName = builder.schoolName;
         this.area = builder.area;
         this.province = builder.province;
@@ -37,28 +37,28 @@ public class StudentSchool {
         private String yearMatric;
 
 
-        public StudentSchool.Builder schoolName(String value) {
+        public ApplicantSchool.Builder schoolName(String value) {
             this.schoolName = value;
             return this;
         }
 
-        public StudentSchool.Builder area(String value) {
+        public ApplicantSchool.Builder area(String value) {
             this.area = value;
             return this;
         }
 
-        public StudentSchool.Builder province(String value) {
+        public ApplicantSchool.Builder province(String value) {
             this.province = value;
             return this;
         }
 
-        public StudentSchool.Builder yearMatric(String value) {
+        public ApplicantSchool.Builder yearMatric(String value) {
             this.yearMatric = value;
             return this;
         }
 
-        public StudentSchool build() {
-            return new StudentSchool(this);
+        public ApplicantSchool build() {
+            return new ApplicantSchool(this);
         }
 
 
