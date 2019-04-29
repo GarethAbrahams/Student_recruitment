@@ -11,12 +11,22 @@ public class ApplicantRepositoryImpl implements ApplicantRepository {
     private static ApplicantRepositoryImpl repository = null;
     private Set<Applicant> applicants;
 
-    public ApplicantRepositoryImpl() {
+    //HashSet - Store in memory
+    private ApplicantRepositoryImpl() {
+
         this.applicants = new HashSet<>();
     }
 
+    public static ApplicantRepositoryImpl getRepository(){
+        if(repository==null)
+            repository = new ApplicantRepositoryImpl();
+
+        return repository;
+    }
+
     @Override
-    public Set<Applicant> getAll() {
+    public Set<Applicant> getAll()
+    {
         return this.applicants;
     }
 
@@ -28,16 +38,18 @@ public class ApplicantRepositoryImpl implements ApplicantRepository {
 
     @Override
     public Applicant update(Applicant applicant) {
+        //update the application by making a copy
         return null;
     }
 
     @Override
     public void delete(String a) {
-
+        //delete Applicant with name is "a"
     }
 
     @Override
     public Applicant read(String a) {
+        //bring a specific Applicant
         return null;
     }
 }
