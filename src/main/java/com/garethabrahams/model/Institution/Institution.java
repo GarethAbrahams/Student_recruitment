@@ -1,8 +1,11 @@
 package com.garethabrahams.model.Institution;
 
+import com.garethabrahams.model.Applicant.ApplicantCity;
+
 public class Institution {
 
-    String institutionName, institutionLocation;
+    private String institutionName;
+    private ApplicantCity institutionCity;
 
     private Institution(){
     }
@@ -11,26 +14,27 @@ public class Institution {
         return institutionName;
     }
 
-    public String getLocation(){
-        return institutionLocation;
+    public String getInstitutionCity(){
+        return institutionCity.getCity();
     }
 
     public Institution (Builder builder) {
         this.institutionName = builder.institutionName;
-        this.institutionLocation = builder.institutionLocation;
+        this.institutionCity = builder.institutionCity;
 
     }
 
     public static class Builder {
-        private String institutionName,institutionLocation;
+        private String institutionName;
+        private ApplicantCity institutionCity;
 
         public Institution.Builder institutionName(String value) {
             this.institutionName = value;
             return this;
         }
 
-        public Institution.Builder institutionLocation(String value) {
-            this.institutionLocation = value;
+        public Institution.Builder institutionCity(ApplicantCity value) {
+            this.institutionCity = value;
             return this;
         }
 

@@ -1,16 +1,16 @@
 package com.garethabrahams.model.Staff;
 
-public class Region {
-
+public class StaffCity {
     String city;
 
-    private Region(){
+    private StaffCity() {
     }
 
-    public String getRegion(){
+    public String getCity() {
         return city;
     }
-    public Region (Builder builder) {
+
+    public StaffCity(Builder builder) {
         this.city = builder.city;
 
     }
@@ -18,13 +18,15 @@ public class Region {
     public static class Builder {
         private String city;
 
-        public Region.Builder city(String value) {
+        public StaffCity.Builder city(String value) {
             this.city = value;
             return this;
         }
 
-        public Region build() {
-            return new Region(this);
+        public StaffCity build() {
+            return new StaffCity(this);
         }
+
+
     }
 }

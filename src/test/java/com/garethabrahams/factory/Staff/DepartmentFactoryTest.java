@@ -10,7 +10,7 @@ public class DepartmentFactoryTest {
 
     @Test
     public void createDepartment() {
-        Department department = DepartmentFactory.createDepartment("Techops");
-        Assert.assertEquals("Techops",department.getDepartment());
+        Department dept = DepartmentFactory.createDepartment("Techops");
+        Assert.assertEquals("Techops",dept.getDepartment());
     }
 }

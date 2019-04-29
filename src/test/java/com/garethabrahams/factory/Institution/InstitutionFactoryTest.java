@@ -1,6 +1,8 @@
 package com.garethabrahams.factory.Institution;
 
+import com.garethabrahams.factory.Applicant.ApplicantCityFactory;
 import com.garethabrahams.factory.Institution.InstitutionFactory;
+import com.garethabrahams.model.Applicant.ApplicantCity;
 import com.garethabrahams.model.Institution.Institution;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,7 +11,8 @@ public class InstitutionFactoryTest {
 
     @Test
     public void createInstitution() {
-        Institution institution = InstitutionFactory.createInstitution("CPUT", "Cape Town");
+        ApplicantCity city = ApplicantCityFactory.creatApplicantCity("Cape Town");
+        Institution institution = InstitutionFactory.createInstitution("CPUT",city);
         Assert.assertEquals("CPUT",institution.getInstitutionName());
     }
 }

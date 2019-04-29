@@ -3,6 +3,7 @@ package com.garethabrahams.model.Applicant;
 public class ApplicantWorkExperience {
 
     private String company, area, yearAtCompany, role;
+    private ApplicantCity city;
 
     private ApplicantWorkExperience(){
     }
@@ -23,11 +24,16 @@ public class ApplicantWorkExperience {
         return role;
     }
 
+    public String getCity(){
+        return city.getCity();
+    }
+
     public ApplicantWorkExperience(ApplicantWorkExperience.Builder builder) {
         this.company = builder.company;
         this.area = builder.area;
         this.yearAtCompany = builder.yearAtCompany;
         this.role = builder.role;
+        this.city = builder.city;
     }
 
     public static class Builder {
@@ -35,6 +41,7 @@ public class ApplicantWorkExperience {
         private String area;
         private String yearAtCompany;
         private String role;
+        private ApplicantCity city;
 
 
         public ApplicantWorkExperience.Builder company(String value) {
@@ -54,6 +61,11 @@ public class ApplicantWorkExperience {
 
         public ApplicantWorkExperience.Builder role(String value) {
             this.role = value;
+            return this;
+        }
+
+        public ApplicantWorkExperience.Builder city(ApplicantCity value){
+            this.city = value;
             return this;
         }
 

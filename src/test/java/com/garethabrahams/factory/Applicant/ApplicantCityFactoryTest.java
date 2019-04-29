@@ -8,7 +8,7 @@ public class ApplicantCityFactoryTest {
 
     @Test
     public void creatStudentCity() {
-        ApplicantCity city = ApplicantCityFactory.creatStudentCity("Cape Town");
+        ApplicantCity city = ApplicantCityFactory.creatApplicantCity("Cape Town");
         Assert.assertEquals("Cape Town",city.getCity());
     }
 }

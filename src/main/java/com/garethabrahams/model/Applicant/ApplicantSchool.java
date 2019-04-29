@@ -3,6 +3,7 @@ package com.garethabrahams.model.Applicant;
 public class ApplicantSchool {
 
     private String schoolName, area, province, yearMatric;
+    private ApplicantCity city;
 
     private ApplicantSchool() {
     }
@@ -23,11 +24,14 @@ public class ApplicantSchool {
         return yearMatric;
     }
 
+    public String getCity(){return city.getCity();}
+
     public ApplicantSchool(ApplicantSchool.Builder builder) {
         this.schoolName = builder.schoolName;
         this.area = builder.area;
         this.province = builder.province;
         this.yearMatric = builder.yearMatric;
+        this.city = builder.city;
     }
 
     public static class Builder {
@@ -35,6 +39,7 @@ public class ApplicantSchool {
         private String area;
         private String province;
         private String yearMatric;
+        private ApplicantCity city;
 
 
         public ApplicantSchool.Builder schoolName(String value) {
@@ -57,7 +62,13 @@ public class ApplicantSchool {
             return this;
         }
 
+        public ApplicantSchool.Builder city(ApplicantCity value){
+            this.city = value;
+            return this;
+        }
+
         public ApplicantSchool build() {
+
             return new ApplicantSchool(this);
         }
 
