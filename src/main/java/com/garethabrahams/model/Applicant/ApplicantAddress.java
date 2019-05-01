@@ -45,6 +45,13 @@ public class ApplicantAddress {
             return this;
         }
 
+        public ApplicantAddress.Builder copy(ApplicantAddress address){
+            this.address = address.address;
+            this.suburb = address.suburb;
+            this.city = address.city;
+            return this;
+        }
+
         public ApplicantAddress build() {
             return new ApplicantAddress(this);
         }

@@ -38,6 +38,12 @@ public class Institution {
             return this;
         }
 
+        public Institution.Builder copy(Institution institution){
+            this.institutionName = institution.institutionName;
+            this.institutionCity = institution.institutionCity;
+            return this;
+        }
+
         public Institution build() {
             return new Institution(this);
         }

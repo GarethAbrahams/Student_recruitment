@@ -36,6 +36,11 @@ public class ApplicantContact {
             return this;
         }
 
+        public Builder copy(ApplicantContact contact){
+            this.cellphone = contact.cellphone;
+            this.phone = contact.phone;
+            return this;
+        }
 
         public ApplicantContact build() {
             return new ApplicantContact(this);

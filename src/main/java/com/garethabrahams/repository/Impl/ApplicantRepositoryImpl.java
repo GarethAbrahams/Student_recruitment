@@ -38,18 +38,31 @@ public class ApplicantRepositoryImpl implements ApplicantRepository {
 
     @Override
     public Applicant update(Applicant applicant) {
-        //update the application by making a copy
+        Applicant applicantOld = ApplicantSearch(applicant.getId());
+        if (applicantOld != null){
+            Applicant ApplicantNew = new Applicant.Builder()
+                    .copy(applicantOld)
+                    .build();
+            return create(ApplicantNew);
+        }
         return null;
     }
 
     @Override
     public void delete(String a) {
-        //delete Applicant with name is "a"
+        this.applicants.remove(a);
     }
 
     @Override
-    public Applicant read(String a) {
-        //bring a specific Applicant
+    public Applicant read(final String a) {
+        return ApplicantSearch(a);
+    }
+
+    public Applicant ApplicantSearch(final String applicantID){
+        for (Applicant applicant: this.applicants){
+            if (applicant.getId().equals(applicantID))
+                return applicant;
+        }
         return null;
     }
 }

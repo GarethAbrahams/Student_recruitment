@@ -24,6 +24,12 @@ public class ApplicantEmail {
             return this;
         }
 
+        public ApplicantEmail.Builder copy(ApplicantEmail email){
+
+            this.email = email.email;
+            return this;
+        }
+
         public ApplicantEmail build(){
             return new ApplicantEmail(this);
         }

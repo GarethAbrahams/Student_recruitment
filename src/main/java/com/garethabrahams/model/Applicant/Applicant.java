@@ -91,6 +91,15 @@ public class Applicant {
             return this;
         }
 
+        public Builder copy(Applicant applicant){
+            this.id = applicant.id;
+            this.name = applicant.name;
+            this.surname = applicant.surname;
+            this.address = applicant.address;
+            this.contact = applicant.contact;
+            this.email = applicant.email;
+            return this;
+        }
 
         public Applicant build() {
             return new Applicant(this);

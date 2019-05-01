@@ -22,8 +22,7 @@ public class Course {
     }
 
     public static class Builder {
-        private String courseName,period;
-        private double cost;
+        private String courseName;
         private Facalty facalty;
         private Institution institution;
 
@@ -40,6 +39,13 @@ public class Course {
 
         public Course.Builder institution(Institution value){
             this.institution = value;
+            return this;
+        }
+
+        public Course.Builder copy(Course course){
+            this.courseName = course.courseName;
+            this.facalty = course.facalty;
+            this.institution = course.institution;
             return this;
         }
 

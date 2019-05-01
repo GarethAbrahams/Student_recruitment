@@ -23,6 +23,11 @@ public class Password {
             return this;
         }
 
+        public Password.Builder copy(Password pass){
+            this.password = pass.password;
+            return this;
+        }
+
         public Password build() {
             return new Password(this);
         }

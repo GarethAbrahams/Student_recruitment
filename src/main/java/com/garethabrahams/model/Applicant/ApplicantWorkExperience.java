@@ -69,6 +69,15 @@ public class ApplicantWorkExperience {
             return this;
         }
 
+        public ApplicantWorkExperience.Builder copy(ApplicantWorkExperience work){
+            this.company = work.company;
+            this.area = work.area;
+            this.yearAtCompany = work.yearAtCompany;
+            this.role = work.role;
+            this.city = work.city;
+            return this;
+        }
+
         public ApplicantWorkExperience build() {
             return new ApplicantWorkExperience(this);
         }

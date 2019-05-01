@@ -42,6 +42,12 @@ public class Username {
             return this;
         }
 
+        public Username.Builder copy(Username user){
+            this.user = user.user;
+            this.username = user.username;
+            return this;
+        }
+
         public Username build() {
             return new Username(this);
         }

@@ -24,6 +24,11 @@ public class Facalty {
             return this;
         }
 
+        public Facalty.Builder copy(Facalty facalty){
+            this.facaltyName = facalty.facaltyName;
+            return this;
+        }
+
         public Facalty build() {
             return new Facalty(this);
         }

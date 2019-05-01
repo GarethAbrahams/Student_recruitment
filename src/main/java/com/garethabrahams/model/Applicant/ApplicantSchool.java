@@ -67,6 +67,15 @@ public class ApplicantSchool {
             return this;
         }
 
+        public ApplicantSchool.Builder copy(ApplicantSchool school){
+            this.schoolName = school.schoolName;
+            this.area = school.area;
+            this.province = school.province;
+            this.yearMatric = school.yearMatric;
+            this.city = school.city;
+            return this;
+        }
+
         public ApplicantSchool build() {
 
             return new ApplicantSchool(this);

@@ -47,6 +47,13 @@ public class ApplicantQualification {
             return this;
         }
 
+        public ApplicantQualification.Builder copy(ApplicantQualification course){
+            this.QualificationName = course.QualificationName;
+            this.yearObtained = course.yearObtained;
+            this.course = course.course;
+            return this;
+        }
+
         public ApplicantQualification build(){
             return new ApplicantQualification(this);
         }

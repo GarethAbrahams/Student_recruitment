@@ -24,6 +24,11 @@ public class ApplicantCity {
             return this;
         }
 
+        public ApplicantCity.Builder copy(ApplicantCity NewCity){
+            this.city = NewCity.city;
+            return this;
+        }
+
         public ApplicantCity build() {
             return new ApplicantCity(this);
         }
