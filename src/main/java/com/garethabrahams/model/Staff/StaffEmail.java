@@ -23,6 +23,11 @@ public class StaffEmail {
             return this;
         }
 
+        public StaffEmail.Builder copy(StaffEmail value){
+            this.email = value.email;
+            return this;
+        }
+
         public StaffEmail build(){
             return new StaffEmail(this);
         }

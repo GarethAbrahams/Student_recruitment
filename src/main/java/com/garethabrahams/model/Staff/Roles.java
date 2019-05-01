@@ -25,6 +25,11 @@ public class Roles{
             return this;
         }
 
+        public Roles.Builder copy(Roles role){
+            this.role = role.role;
+            return this;
+        }
+
         public Roles build(){
             return new Roles(this);
         }

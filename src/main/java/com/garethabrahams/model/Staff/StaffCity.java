@@ -23,6 +23,11 @@ public class StaffCity {
             return this;
         }
 
+        public StaffCity.Builder copy(StaffCity city) {
+            this.city = city.city;
+            return this;
+        }
+
         public StaffCity build() {
             return new StaffCity(this);
         }

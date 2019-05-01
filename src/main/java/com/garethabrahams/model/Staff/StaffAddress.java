@@ -1,5 +1,7 @@
 package com.garethabrahams.model.Staff;
 
+import com.garethabrahams.factory.Staff.StaffFactory;
+
 public class StaffAddress {
 
     private String address;
@@ -42,6 +44,13 @@ public class StaffAddress {
 
         public StaffAddress.Builder city(StaffCity value){
             this.city = value;
+            return this;
+        }
+
+        public StaffAddress.Builder copy(StaffAddress address){
+            this.address = address.address;
+            this.suburb = address.suburb;
+            this.city = address.city;
             return this;
         }
 

@@ -113,6 +113,19 @@ public class Staff {
             return this;
         }
 
+        public Builder copy(Staff staff){
+            this.employeeID = staff.employeeID;
+            this.name = staff.name;
+            this.surname = staff.surname;
+            this.id = staff.id;
+            this.address = staff.address;
+            this.contact = staff.contact;
+            this.email = staff.email;
+            this.department = staff.department;
+            this.role = staff.role;
+            return this;
+        }
+
         public Staff build(){
             return new Staff(this);
         }

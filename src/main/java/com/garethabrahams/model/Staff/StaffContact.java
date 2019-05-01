@@ -37,6 +37,12 @@ public class StaffContact {
             return this;
         }
 
+        public Builder copy(StaffContact contact){
+            this.phone = contact.phone;
+            this.cellphone = contact.cellphone;
+            return this;
+        }
+
 
         public StaffContact build() {
             return new StaffContact(this);

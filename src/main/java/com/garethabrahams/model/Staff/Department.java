@@ -24,6 +24,11 @@ public class Department {
             return this;
         }
 
+        public Department.Builder copy(Department dept){
+            this.department = dept.department;
+            return this;
+        }
+
         public Department build() {
             return new Department(this);
         }
