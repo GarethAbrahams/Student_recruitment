@@ -55,7 +55,7 @@ public class ApplicationCityRepositoryImpl implements ApplicantCityRepository {
 
     @Override
     public ApplicantCity read(String s) {
-        return null;
+        return ApplicantCitySearch(s);
     }
 
     public ApplicantCity ApplicantCitySearch(final String value){

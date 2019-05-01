@@ -53,12 +53,13 @@ public class ApplicantSchoolRepositoryImpl implements ApplicantSchoolRepository 
 
     @Override
     public ApplicantSchool read(String school) {
+
         return ApplicantSchoolSearch(school);
     }
 
-    public ApplicantSchool ApplicantSchoolSearch(final String School){
+    public ApplicantSchool ApplicantSchoolSearch(final String S){
         for (ApplicantSchool school: this.applicantsSchool){
-            if (school.getSchoolname().equals(school))
+            if (school.getSchoolname().equals(S))
                 return school;
         }
         return null;
