@@ -1,23 +1,21 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Applicant.ApplicantCityFactory;
-import com.garethabrahams.factory.Applicant.ApplicantQualificationFactory;
-import com.garethabrahams.factory.Institution.CourseFactory;
-import com.garethabrahams.factory.Institution.FacaltyFactory;
-import com.garethabrahams.factory.Institution.InstitutionFactory;
-import com.garethabrahams.model.Applicant.ApplicantCity;
-import com.garethabrahams.model.Applicant.ApplicantQualification;
-import com.garethabrahams.model.Institution.Course;
-import com.garethabrahams.model.Institution.Facalty;
-import com.garethabrahams.model.Institution.Institution;
+import com.garethabrahams.factory.ApplicantCityFactory;
+import com.garethabrahams.factory.ApplicantQualificationFactory;
+import com.garethabrahams.factory.CourseFactory;
+import com.garethabrahams.factory.FacaltyFactory;
+import com.garethabrahams.factory.InstitutionFactory;
+import com.garethabrahams.model.ApplicantCity;
+import com.garethabrahams.model.ApplicantQualification;
+import com.garethabrahams.model.Course;
+import com.garethabrahams.model.Facalty;
+import com.garethabrahams.model.Institution;
 import com.garethabrahams.repository.ApplicantQualificationRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class ApplicantQualificationRepositoryImplTest {
     private static ApplicantQualificationRepository applicantQualificationRepository;

@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.Institution.Institution;
+import com.garethabrahams.model.Institution;
 
 import java.util.Set;
 

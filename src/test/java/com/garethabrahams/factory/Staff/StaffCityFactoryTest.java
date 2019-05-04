@@ -1,10 +1,9 @@
 package com.garethabrahams.factory.Staff;
 
-import com.garethabrahams.model.Staff.StaffCity;
+import com.garethabrahams.factory.StaffCityFactory;
+import com.garethabrahams.model.StaffCity;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class StaffCityFactoryTest {
 

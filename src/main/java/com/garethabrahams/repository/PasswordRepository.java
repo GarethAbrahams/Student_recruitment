@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.LoginAccounts.Password;
+import com.garethabrahams.model.Password;
 
 import java.util.Set;
 

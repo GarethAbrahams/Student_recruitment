@@ -1,15 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.LoginAccounts.PasswordFactory;
-import com.garethabrahams.model.LoginAccounts.Password;
+import com.garethabrahams.factory.PasswordFactory;
+import com.garethabrahams.model.Password;
 import com.garethabrahams.repository.PasswordRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class PasswordRepositoryImplTest {
     private static PasswordRepository passwordRepository;

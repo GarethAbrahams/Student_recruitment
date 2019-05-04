@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.Applicant.ApplicantWorkExperience;
+import com.garethabrahams.model.ApplicantWorkExperience;
 
 import java.util.Set;
 

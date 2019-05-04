@@ -1,9 +1,9 @@
 package com.garethabrahams.factory.Institution;
 
-import com.garethabrahams.factory.Applicant.ApplicantCityFactory;
-import com.garethabrahams.factory.Institution.InstitutionFactory;
-import com.garethabrahams.model.Applicant.ApplicantCity;
-import com.garethabrahams.model.Institution.Institution;
+import com.garethabrahams.factory.ApplicantCityFactory;
+import com.garethabrahams.factory.InstitutionFactory;
+import com.garethabrahams.model.ApplicantCity;
+import com.garethabrahams.model.Institution;
 import org.junit.Assert;
 import org.junit.Test;
 

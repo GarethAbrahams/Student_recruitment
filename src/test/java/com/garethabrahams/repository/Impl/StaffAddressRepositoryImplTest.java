@@ -1,17 +1,15 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Staff.StaffAddressFactory;
-import com.garethabrahams.factory.Staff.StaffCityFactory;
-import com.garethabrahams.model.Staff.StaffAddress;
-import com.garethabrahams.model.Staff.StaffCity;
+import com.garethabrahams.factory.StaffAddressFactory;
+import com.garethabrahams.factory.StaffCityFactory;
+import com.garethabrahams.model.StaffAddress;
+import com.garethabrahams.model.StaffCity;
 import com.garethabrahams.repository.StaffAddressRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class StaffAddressRepositoryImplTest {
     private static StaffAddressRepository staffAddressRepository;

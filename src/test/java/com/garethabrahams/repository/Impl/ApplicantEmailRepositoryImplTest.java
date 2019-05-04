@@ -1,15 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Applicant.ApplicantEmailFactory;
-import com.garethabrahams.model.Applicant.ApplicantEmail;
+import com.garethabrahams.factory.ApplicantEmailFactory;
+import com.garethabrahams.model.ApplicantEmail;
 import com.garethabrahams.repository.ApplicantEmailRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class ApplicantEmailRepositoryImplTest {
 

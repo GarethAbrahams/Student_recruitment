@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.LoginAccounts.Username;
+import com.garethabrahams.model.Username;
 
 import java.util.Set;
 

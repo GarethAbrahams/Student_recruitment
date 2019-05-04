@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.Staff.StaffEmail;
+import com.garethabrahams.model.StaffEmail;
 
 import java.util.Set;
 

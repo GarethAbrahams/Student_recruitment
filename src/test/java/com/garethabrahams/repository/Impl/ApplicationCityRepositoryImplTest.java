@@ -1,15 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Applicant.ApplicantCityFactory;
-import com.garethabrahams.model.Applicant.ApplicantCity;
+import com.garethabrahams.factory.ApplicantCityFactory;
+import com.garethabrahams.model.ApplicantCity;
 import com.garethabrahams.repository.ApplicantCityRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class ApplicationCityRepositoryImplTest {
     private static ApplicantCityRepository applicationCityRepository;

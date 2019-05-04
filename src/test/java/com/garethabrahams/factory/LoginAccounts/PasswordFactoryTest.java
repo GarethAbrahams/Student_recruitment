@@ -1,11 +1,9 @@
 package com.garethabrahams.factory.LoginAccounts;
 
-import com.garethabrahams.model.LoginAccounts.Password;
+import com.garethabrahams.factory.PasswordFactory;
+import com.garethabrahams.model.Password;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.experimental.theories.internal.ParameterizedAssertionError;
-
-import static org.junit.Assert.*;
 
 public class PasswordFactoryTest {
 

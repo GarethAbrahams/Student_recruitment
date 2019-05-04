@@ -1,10 +1,9 @@
 package com.garethabrahams.factory.Institution;
 
-import com.garethabrahams.model.Institution.Facalty;
+import com.garethabrahams.factory.FacaltyFactory;
+import com.garethabrahams.model.Facalty;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class FacaltyFactoryTest {
 

@@ -1,6 +1,6 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.model.Applicant.ApplicantQualification;
+import com.garethabrahams.model.ApplicantQualification;
 import com.garethabrahams.repository.ApplicantQualificationRepository;
 
 import java.util.HashSet;
@@ -57,9 +57,9 @@ public class ApplicantQualificationRepositoryImpl implements ApplicantQualificat
         return ApplicantQualificationSearch(Qual);
     }
 
-    public ApplicantQualification ApplicantQualificationSearch(final String Qualification){
+    public ApplicantQualification ApplicantQualificationSearch(final String Qual){
         for (ApplicantQualification qualification: this.applicantsQualification){
-            if (qualification.getQualificationName().equals(Qualification))
+            if (qualification.getQualificationName().equals(Qual))
                 return qualification;
         }
         return null;

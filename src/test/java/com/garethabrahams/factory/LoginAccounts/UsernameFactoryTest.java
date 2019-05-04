@@ -1,8 +1,7 @@
 package com.garethabrahams.factory.LoginAccounts;
 
-import com.garethabrahams.factory.Staff.*;
-import com.garethabrahams.model.LoginAccounts.Username;
-import com.garethabrahams.model.Staff.*;
+import com.garethabrahams.factory.*;
+import com.garethabrahams.model.*;
 import org.junit.Assert;
 import org.junit.Test;
 

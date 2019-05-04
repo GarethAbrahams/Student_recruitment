@@ -1,6 +1,6 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.model.Institution.Course;
+import com.garethabrahams.model.Course;
 import com.garethabrahams.repository.CourseRepository;
 
 import java.util.HashSet;

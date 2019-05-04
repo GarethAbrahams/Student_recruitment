@@ -1,6 +1,6 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.model.Staff.Staff;
+import com.garethabrahams.model.Staff;
 import com.garethabrahams.repository.StaffRepository;
 
 import java.util.HashSet;

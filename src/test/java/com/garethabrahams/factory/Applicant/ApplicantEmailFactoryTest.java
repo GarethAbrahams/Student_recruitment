@@ -1,10 +1,9 @@
 package com.garethabrahams.factory.Applicant;
 
-import com.garethabrahams.model.Applicant.ApplicantEmail;
+import com.garethabrahams.factory.ApplicantEmailFactory;
+import com.garethabrahams.model.ApplicantEmail;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class ApplicantEmailFactoryTest {
 

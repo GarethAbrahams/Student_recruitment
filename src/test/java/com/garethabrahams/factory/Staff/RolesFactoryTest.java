@@ -1,10 +1,9 @@
 package com.garethabrahams.factory.Staff;
 
-import com.garethabrahams.model.Staff.Roles;
+import com.garethabrahams.factory.RolesFactory;
+import com.garethabrahams.model.Roles;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class RolesFactoryTest {
 

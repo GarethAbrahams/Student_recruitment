@@ -1,6 +1,7 @@
 package com.garethabrahams.factory.Applicant;
 
-import com.garethabrahams.model.Applicant.*;
+import com.garethabrahams.factory.*;
+import com.garethabrahams.model.*;
 import org.junit.Assert;
 import org.junit.Test;
 

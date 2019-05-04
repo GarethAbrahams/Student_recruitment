@@ -1,10 +1,9 @@
 package com.garethabrahams.factory.Staff;
 
-import com.garethabrahams.model.Staff.StaffContact;
+import com.garethabrahams.factory.StaffContactFactory;
+import com.garethabrahams.model.StaffContact;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class StaffContactFactoryTest {
 

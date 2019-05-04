@@ -1,6 +1,6 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.model.LoginAccounts.Password;
+import com.garethabrahams.model.Password;
 import com.garethabrahams.repository.PasswordRepository;
 
 import java.util.HashSet;

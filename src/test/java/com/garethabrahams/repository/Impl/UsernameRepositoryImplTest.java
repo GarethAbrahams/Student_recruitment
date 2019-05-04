@@ -1,17 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.LoginAccounts.UsernameFactory;
-import com.garethabrahams.factory.Staff.*;
-import com.garethabrahams.model.LoginAccounts.Username;
-import com.garethabrahams.model.Staff.*;
+import com.garethabrahams.factory.*;
+import com.garethabrahams.model.*;
 import com.garethabrahams.repository.UsernameRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class UsernameRepositoryImplTest {
     private static UsernameRepository usernameRepository;

@@ -1,15 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Staff.RolesFactory;
-import com.garethabrahams.model.Staff.Roles;
+import com.garethabrahams.factory.RolesFactory;
+import com.garethabrahams.model.Roles;
 import com.garethabrahams.repository.RolesRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class RolesRepositoryImplTest {
     private static RolesRepository rolesRepository;

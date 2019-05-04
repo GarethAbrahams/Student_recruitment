@@ -1,6 +1,6 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.model.Applicant.ApplicantAddress;
+import com.garethabrahams.model.ApplicantAddress;
 import com.garethabrahams.repository.ApplicantAddressRepository;
 
 import java.util.HashSet;

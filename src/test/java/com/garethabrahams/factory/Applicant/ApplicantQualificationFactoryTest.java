@@ -1,19 +1,17 @@
 package com.garethabrahams.factory.Applicant;
 
-import com.garethabrahams.factory.Institution.CourseFactory;
-import com.garethabrahams.factory.Institution.FacaltyFactory;
-import com.garethabrahams.factory.Institution.InstitutionFactory;
-import com.garethabrahams.model.Applicant.ApplicantCity;
-import com.garethabrahams.model.Applicant.ApplicantQualification;
-import com.garethabrahams.model.Institution.Course;
-import com.garethabrahams.model.Institution.Facalty;
-import com.garethabrahams.model.Institution.Institution;
+import com.garethabrahams.factory.ApplicantCityFactory;
+import com.garethabrahams.factory.ApplicantQualificationFactory;
+import com.garethabrahams.factory.CourseFactory;
+import com.garethabrahams.factory.FacaltyFactory;
+import com.garethabrahams.factory.InstitutionFactory;
+import com.garethabrahams.model.ApplicantCity;
+import com.garethabrahams.model.ApplicantQualification;
+import com.garethabrahams.model.Course;
+import com.garethabrahams.model.Facalty;
+import com.garethabrahams.model.Institution;
 import org.junit.Assert;
 import org.junit.Test;
-
-import javax.swing.border.EmptyBorder;
-
-import static org.junit.Assert.*;
 
 public class ApplicantQualificationFactoryTest {
 

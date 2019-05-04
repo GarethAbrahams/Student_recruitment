@@ -1,15 +1,13 @@
 package com.garethabrahams.repository.Impl;
 
-import com.garethabrahams.factory.Staff.*;
-import com.garethabrahams.model.Staff.*;
+import com.garethabrahams.factory.*;
+import com.garethabrahams.model.*;
 import com.garethabrahams.repository.StaffRepository;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import static org.junit.Assert.*;
 
 public class StaffRepositoryImplTest {
     private static StaffRepository staffRepository;

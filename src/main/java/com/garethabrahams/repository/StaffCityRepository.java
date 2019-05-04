@@ -1,6 +1,6 @@
 package com.garethabrahams.repository;
 
-import com.garethabrahams.model.Staff.StaffCity;
+import com.garethabrahams.model.StaffCity;
 
 import java.util.Set;
 
