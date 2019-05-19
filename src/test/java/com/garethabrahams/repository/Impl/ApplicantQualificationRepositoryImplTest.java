@@ -12,6 +12,7 @@ import com.garethabrahams.model.Facalty;
 import com.garethabrahams.model.Institution;
 import com.garethabrahams.repository.ApplicantQualificationRepository;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -40,23 +41,20 @@ public class ApplicantQualificationRepositoryImplTest {
 
     @Test
     public void update() {
-        create();
         ApplicantQualification qual = applicantQualificationRepository.update(qualification);
-        Assert.assertEquals(qual.getCourse(),qualification.getCourse());
+        Assert.assertEquals(qual.getCourse().getCourseName(),qualification.getCourse().getCourseName());
     }
 
     @Test
     public void delete() {
-        create();
         ApplicantQualification qual = applicantQualificationRepository.read(qualification.getQualificationName());
         applicantQualificationRepository.delete(qual.getQualificationName());
-        Assert.assertEquals(qual,applicantQualificationRepository.read("AppDev"));
+        Assert.assertEquals(qual.getQualificationName(),applicantQualificationRepository.read("AppDev").getQualificationName());
     }
 
     @Test
     public void read() {
-        create();
-        Assert.assertEquals(qualification,applicantQualificationRepository.read("AppDev"));
+        Assert.assertEquals(qualification.getCourse().getCourseName(),applicantQualificationRepository.read(qualification.getQualificationName()).getCourse().getCourseName());
 
     }
 }

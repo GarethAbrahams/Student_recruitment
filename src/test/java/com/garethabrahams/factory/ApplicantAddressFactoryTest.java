@@ -7,6 +7,7 @@ import com.garethabrahams.model.ApplicantAddress;
 import org.junit.Assert;
 import org.junit.Test;
 
+
 public class ApplicantAddressFactoryTest {
 
     @Test

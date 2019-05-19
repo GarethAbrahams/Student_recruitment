@@ -42,7 +42,7 @@ public class ApplicantQualificationServiceImplTest {
 
         qualificationSet.add(service.create(qualification));
 
-        Assert.assertEquals(qualification.getCourse(),service.read(qualification.getQualificationName()).getCourse());
+        Assert.assertEquals(qualification.getCourse().getCourseName(),service.read(qualification.getQualificationName()).getCourse().getCourseName());
     }
 
     @Test
