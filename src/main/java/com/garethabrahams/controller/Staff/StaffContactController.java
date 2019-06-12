@@ -1,7 +1,7 @@
-package com.garethabrahams.controller;
+package com.garethabrahams.controller.Staff;
 
-import com.garethabrahams.model.Applicant.Applicant;
-import com.garethabrahams.service.Applicant.ApplicantService;
+import com.garethabrahams.model.Staff.StaffContact;
+import com.garethabrahams.service.Staff.StaffContactService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
@@ -9,28 +9,28 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Set;
 
 @RestController
-@RequestMapping("/Applicant")
-public class ApplicantController {
+@RequestMapping("/StaffContact")
+public class StaffContactController {
     @Autowired
-    @Qualifier("ApplicantService")
-    private ApplicantService service;
+    @Qualifier("StaffContactService")
+    private StaffContactService service;
 
     @PostMapping("/create")
     @ResponseBody
-    public Applicant create(Applicant applicant){
-        return service.create(applicant);
+    public StaffContact create(StaffContact contact){
+        return service.create(contact);
     }
 
     @GetMapping("/read/{id}")
     @ResponseBody
-    public  Applicant read(@PathVariable String id){
+    public  StaffContact read(@PathVariable String id){
         return service.read(id);
     }
 
     @PostMapping("/update")
     @ResponseBody
-    public Applicant update(Applicant applicant){
-        return service.update(applicant);
+    public StaffContact update(StaffContact contact){
+        return service.update(contact);
     }
 
     @GetMapping("/delete/{id}")
@@ -41,7 +41,7 @@ public class ApplicantController {
 
     @GetMapping("/read/all")
     @ResponseBody
-    public Set<Applicant> getAll(){
+    public Set<StaffContact> getAll(){
         return service.getAll();
     }
 }

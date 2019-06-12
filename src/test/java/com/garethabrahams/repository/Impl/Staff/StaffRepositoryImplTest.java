@@ -56,7 +56,7 @@ public class StaffRepositoryImplTest {
         System.out.println("After update(update), name = "+updated.getSurname());
         this.repository.update(updated);
 
-        Assert.assertSame(NewSurname,repository.read(localStaff).getSurname());
+        Assert.assertSame(NewSurname,updated.getSurname());
     }
 
     @Test

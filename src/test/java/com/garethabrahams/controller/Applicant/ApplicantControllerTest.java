@@ -1,4 +1,4 @@
-package com.garethabrahams.controller;
+package com.garethabrahams.controller.Applicant;
 
 import com.garethabrahams.factory.Applicant.*;
 import com.garethabrahams.model.Applicant.*;

@@ -1,4 +1,4 @@
-package com.garethabrahams.controller;
+package com.garethabrahams.controller.Staff;
 
 import com.garethabrahams.factory.General.DepartmentFactory;
 import com.garethabrahams.factory.General.RolesFactory;
