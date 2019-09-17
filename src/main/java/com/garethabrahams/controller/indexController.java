@@ -9,6 +9,6 @@ public class indexController {
     @GetMapping("/")
     @ResponseBody
     public String getHome(){
-        return "Hello";
+        return "Hello, you have reached the HR RECRUITMENT SYSTEM";
     }
 }

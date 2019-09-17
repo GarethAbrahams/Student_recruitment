@@ -15,9 +15,9 @@ public class ApplicantController {
     @Qualifier("ApplicantService")
     private ApplicantService service;
 
-    @PostMapping("/create")
+    @PostMapping("/create/{applicant}")
     @ResponseBody
-    public Applicant create(Applicant applicant){
+    public Applicant create(@PathVariable Applicant applicant){
         return service.create(applicant);
     }
 
@@ -27,9 +27,9 @@ public class ApplicantController {
         return service.read(id);
     }
 
-    @PostMapping("/update")
+    @PostMapping("/update/{applicant}")
     @ResponseBody
-    public Applicant update(Applicant applicant){
+    public Applicant update(@PathVariable Applicant applicant){
         return service.update(applicant);
     }
 

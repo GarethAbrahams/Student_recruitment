@@ -24,8 +24,9 @@ public class StaffControllerTest {
 
     @Autowired
     private TestRestTemplate restTemple;
-    private String baseURL="http://localhost:8080/applicant";
+    private String baseURL="http://localhost:8080/Staff";
     private Staff staff;
+    private String ID;
 
     @Before
     public void StaffCreate(){
@@ -36,38 +37,39 @@ public class StaffControllerTest {
         StaffCity city = StaffCityFactory.createStaffCity("Cape Town");
         StaffAddress address = StaffAddressFactory.createStaffAddress("18 2nd Ave","Fairways",city);
         staff = StaffFactory.createStaff("123","Gareth","Abrahams","805214456897",address,contact,email,dept,role);
+        ID = staff.getEmployeeID();
     }
 
 
     @Test
     public void create() {
         StaffCreate();
-        HttpHeaders header = new HttpHeaders();
-        HttpEntity<String> entity = new HttpEntity<String>(null,header);
-        ResponseEntity<Staff> postResponse = restTemple.postForEntity(baseURL+"/create",staff,Staff.class);
-        assertNotNull(postResponse);
-        assertNotNull(postResponse.getBody());
+        ResponseEntity<Staff> result = restTemple.withBasicAuth("admin", "admin")
+                .postForEntity(baseURL+"/create/",staff,Staff.class);
+        assertNotNull(result);
+        assertNotNull(result.getBody());
         System.out.print(staff.getEmployeeID()+" - ");
-        System.out.print(postResponse.getBody());
+        System.out.print(result.getBody());
     }
 
     @Test
     public void read() {
         StaffCreate();
-        Staff staff = restTemple.getForObject(baseURL+"/applicant/1",Staff.class);
-        System.out.println(staff.getId());
-        assertNotNull(staff);
+        Staff results = restTemple.getForObject(baseURL+"/read/"+ID,Staff.class);
+        System.out.println(results.getId());
+        assertNotNull(results);
     }
 
     @Test
     public void update() {
-        int id = 1;
-        Staff staff = restTemple.getForObject(baseURL+"/applicant/"+id,Staff.class);
+        Staff staff = restTemple.getForObject(baseURL+"/read/"+ID,Staff.class);
+        Staff newStaff = new Staff.Builder()
+                .copy(staff)
+                .surname("Schippers")
+                .build();
+        System.out.println(newStaff.toString());
 
-        restTemple.put(baseURL+"/applicants/"+id,staff);
-
-        Staff updateStaff = restTemple.getForObject(baseURL+"/Applicant/"+id, Staff.class);
-        assertNotNull(updateStaff);
+        assertNotNull(newStaff);
     }
 
     @Test

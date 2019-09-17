@@ -15,10 +15,10 @@ public class StaffController {
     @Qualifier("StaffService")
     private StaffService service;
 
-    @PostMapping("/create")
+    @PostMapping("/create/{staff}")
     @ResponseBody
-    public Staff create(Staff applicant){
-        return service.create(applicant);
+    public Staff create(@PathVariable Staff staff){
+        return service.create(staff);
     }
 
     @GetMapping("/read/{id}")
@@ -27,10 +27,10 @@ public class StaffController {
         return service.read(id);
     }
 
-    @PostMapping("/update")
+    @PostMapping("/update/{staff}")
     @ResponseBody
-    public Staff update(Staff applicant){
-        return service.update(applicant);
+    public Staff update(@PathVariable Staff staff){
+        return service.update(staff);
     }
 
     @GetMapping("/delete/{id}")

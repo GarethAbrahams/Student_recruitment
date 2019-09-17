@@ -10,10 +10,12 @@ public class ApplicantApp {
 
     @Bean
     public RestTemplate restTemplate(){
+
         return new RestTemplate();
     }
 
     public static void main(String[] args) {
+
         SpringApplication.run(ApplicantApp.class, args);
     }
 }
