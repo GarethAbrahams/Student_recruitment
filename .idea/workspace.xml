@@ -1,54 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1aecb3a-a5a4-4d39-9e99-971dd5493aff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/security/RecruitmentSecurity.java" afterDir="false" />
+    <list default="true" id="a1aecb3a-a5a4-4d39-9e99-971dd5493aff" name="Default Changelist" comment="New project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/AddressFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/ApplicantFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/ContactFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/EmailFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/GenderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/OutcomeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/QualificationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/RaceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/RoleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/SchoolFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/UserDetailsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/WorkExperienceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantAddressFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantContactFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantEmailFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantGenderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantOutcomeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantQualificationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantRaceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantRoleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantSchoolFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantUserDetailsFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/bridge/ApplicantWorkExperienceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Contact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Email.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Outcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Qualification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Race.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/WorkExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantGender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantOutcome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantQualification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantSchool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/bridge/ApplicantWorkExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/ApplicantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/ContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/EmailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/GenderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/OutcomeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/QualificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/RaceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/SchoolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/UserDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/WorkExperienceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantAddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantContactRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantEmailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantGenderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantOutcomeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantRaceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantSchoolRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantUserDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantWorkExperienceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantAddressRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantContactRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantEmailRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantGenderRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantOutcomeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantQualificationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantRaceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantRoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantSchoolRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantUserDetailsRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantWorkExperienceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/AddressRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/ApplicantRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/ContactRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/EmailRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/GenderRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/OutcomeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/QualificationRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/RaceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/RoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/SchoolRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/UserDetailsRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/impl/WorkExperienceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ApplicantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ContactService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/GenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/OutcomeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/QualificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/SchoolService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/UserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/WorkExperienceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantGenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantOutcomeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRaceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/util/IDGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/AddressFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/ApplicantFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/ContactFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/EmailFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/GenderFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/OutcomeFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/QualificationFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/RaceFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/RoleFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/SchoolFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/UserDetailsFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/WorkExperienceFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantAddressFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantContactFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantEmailFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantGenderFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantOutcomeFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantQualificationFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantRaceFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantRoleFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantSchoolFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantUserDetailsFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/bridge/ApplicantWorkExperienceFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantAddressRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantContactRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantEmailRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantGenderRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantOutcomeRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantQualificationRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRaceRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRoleRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantSchoolRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantUserDetailsRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantWorkExperienceRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/AddressRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ApplicantRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ContactRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/EmailRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/GenderRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/OutcomeRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/QualificationRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RaceRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RoleRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/SchoolRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/UserDetailsRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/WorkExperienceRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/ApplicantApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/ApplicantApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantAddressController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantCityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantContactController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantEmailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantQualificationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantSchoolController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantWorkExperienceController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/DepartmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/FacaltyController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/InstitutionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/PasswordController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/RolesController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/UsernameController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffAddressController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffCityController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffContactController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffEmailController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/indexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/indexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/apllication.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantAddressControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantCityControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantContactControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantEmailControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantQualificationControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantSchoolControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantWorkExperienceControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/CourseControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/DepartmentControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/FacaltyControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/InstitutionControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/PasswordControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/RolesControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/UsernameControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffAddressControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffCityControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffContactControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffEmailControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/ApplicantApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/RecruitmentSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/Old/model/Applicant/Applicant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/indexController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantCityFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantContactFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantEmailFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantQualificationFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantSchoolFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantWorkExperienceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicatantAddressFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/CourseFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/DepartmentFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/FacaltyFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/InstitutionFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/PasswordFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/RolesFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/General/UsernameFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffAddressFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffCityFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffContactFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffEmailFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantCity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantQualification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantSchool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/ApplicantWorkExperience.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Course.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Facalty.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Institution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Password.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/General/Username.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/StaffAddress.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/StaffCity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/StaffContact.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/StaffEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantAddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantCityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantContactRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantEmailRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantQualificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/ApplicantQualificationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantSchoolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantWorkExperienceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantAddressRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantContactRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantEmailRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantQualificationRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantSchoolRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantWorkExperienceRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicationCityRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/CourseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/DepartmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/FacaltyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/CourseRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/DepartmentRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/FacaltyRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/InstitutionRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/PasswordRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/RolesRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/Impl/UsernameRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/InstitutionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/PasswordRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/RolesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/General/UsernameRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffAddressRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffCityRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffContactRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffEmailRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffAddressRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffCityRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffContactRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffEmailRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/security/RecruitmentSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantCityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantContactService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantEmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantQualificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantQualificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantSchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantSchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantWorkExperienceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantWorkExperienceService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantAddressServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantCityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantContactServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantEmailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantQualificationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantSchoolServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantWorkExperienceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/CourseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/DepartmentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/FacaltyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/CourseServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/DepartmentServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/FacaltyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/InstitutionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/PasswordServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/RolesServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/Impl/UsernameServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/InstitutionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/PasswordService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/RolesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/General/UsernameService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffAddressServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffCityServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffContactServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffEmailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffAddressService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffCityService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffContactService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffEmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantAddressFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantCityFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantContactFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantEmailFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantQualificationFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantSchoolFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantWorkExperienceFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/CourseFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/DepartmentFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/FacaltyFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/InstitutionFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/PasswordFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/RolesFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/General/UsernameFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffAddressFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffCityFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffContactFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffEmailFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantAddressRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantContactRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantEmailRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantQualificationRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantSchoolRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantWorkExperienceRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicationCityRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/CourseRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/DepartmentRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/FacaltyRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/InstitutionRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/PasswordRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/RolesRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/General/UsernameRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffAddressRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffCityRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffContactRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffEmailRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffRepositoryImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantAddressServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantCityServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantContactServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantEmailServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantQualificationServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantSchoolServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantWorkExperienceServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/CourseServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/DepartmentServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/FacaltyServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/InstitutionServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/PasswordServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/RolesServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/UsernameServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Staff/StaffAddressServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Staff/StaffCityServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Staff/StaffContactServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Staff/StaffEmailServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Staff/StaffServiceImplTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,8 +387,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -98,68 +396,71 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Facalty</find>
+      <find>EmployeeRace</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Applicant/ApplicantFactoryTest.java" root0="FORCE_HIGHLIGHTING" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/StaffControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/ApplicantControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantAddressController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantCityController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantAddressControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantCityControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantContactController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantContactControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantEmailController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantQualificationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantSchoolController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantWorkExperienceControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantSchoolControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantQualificationControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantEmailControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/DepartmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/FacaltyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/InstitutionController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/PasswordController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/RolesController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/UsernameController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/InstitutionControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/FacaltyControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/DepartmentControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/UsernameControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/RolesControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/PasswordControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffAddressController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffCity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffContactController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffEmailController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffCityController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffCityControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffAddressControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffEmailControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffContactControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffRepositoryImplTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantWorkExperienceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/CourseController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/CourseControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/Staff.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/ApplicantApp.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/indexController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/security/RecruitmentSecurity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantControllerTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantSchoolRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantUserDetailsRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/bridge/Impl/ApplicantWorkExperienceRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantContactRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantAddressRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/AddressRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ApplicantRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ContactRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/EmailRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/GenderRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/OutcomeRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/QualificationRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RaceRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RoleRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/SchoolRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/WorkExperienceRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantEmailRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantGenderRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantOutcomeRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantQualificationRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRaceRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRoleRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantSchoolRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantUserDetailsRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantWorkExperienceRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/UserDetailsRepositoryImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/IService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ApplicantService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/AddressService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ContactService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/EmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/GenderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/OutcomeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/QualificationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RaceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/SchoolService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/UserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/WorkExperienceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ApplicantAddressService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantAddressService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantContactService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantEmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantGenderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantOutcomeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantQualificationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRaceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantSchoolService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantWorkExperienceService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantUserDetailsService.java" />
       </list>
     </option>
   </component>
@@ -210,8 +511,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,74 +550,6 @@
               <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Applicant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-              <item name="Impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -340,35 +573,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Applicant" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Student_Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Student_Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="garethabrahams" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="Staff" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -382,12 +586,13 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568758270491" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569996286859" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../payroll" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -395,27 +600,34 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.garethabrahams.repository.bridge.Impl" />
+      <recent name="com.garethabrahams.repository.impl" />
+      <recent name="com.garethabrahams.factory.Bridge" />
+      <recent name="com.garethabrahams.factory" />
       <recent name="com.garethabrahams.controller.General" />
-      <recent name="com.garethabrahams.controller.Staff" />
-      <recent name="com.garethabrahams.controller.Applicant" />
-      <recent name="com.garethabrahams.controller" />
-      <recent name="com.garethabrahams.service.Impl" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.garethabrahams.model.Staff" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.garethabrahams.controller.Staff" />
-      <recent name="com.garethabrahams.controller.Applicant" />
-      <recent name="com.garethabrahams.controller" />
-      <recent name="com.garethabrahams.factory.General" />
-      <recent name="com.garethabrahams.factory.Staff" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Gareth\IdeaProjects\Student_Recruitment" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.garethabrahams.repository.bridge.Impl" />
+      <recent name="com.garethabrahams.controller.Staff" />
+      <recent name="com.garethabrahams.controller.Applicant" />
+      <recent name="com.garethabrahams.controller" />
+      <recent name="com.garethabrahams.factory.General" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.garethabrahams.service.bridge" />
+      <recent name="com.garethabrahams.service" />
+      <recent name="com.garethabrahams.repository.bridge.Impl" />
+      <recent name="com.garethabrahams.repository.impl" />
+      <recent name="com.garethabrahams.repository.bridge" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.garethabrahams.model.Staff" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -430,92 +642,88 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StaffControllerTest">
-    <configuration name="ApplicantControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.com.garethabrahams in HR_Recruitment_system">
+    <configuration name="ApplicantRoleRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HR_Recruitment_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.garethabrahams.controller.Applicant.*" />
+          <option name="PATTERN" value="com.garethabrahams.repository.bridge.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.garethabrahams.controller.Applicant" />
-      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.controller.Applicant.ApplicantControllerTest" />
+      <option name="PACKAGE_NAME" value="com.garethabrahams.repository.bridge.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.repository.bridge.Impl.ApplicantRoleRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaffControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicantSchoolRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HR_Recruitment_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.garethabrahams.controller.Staff.*" />
+          <option name="PATTERN" value="com.garethabrahams.repository.bridge.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.garethabrahams.controller.Staff" />
-      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.controller.Staff.StaffControllerTest" />
+      <option name="PACKAGE_NAME" value="com.garethabrahams.repository.bridge.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.repository.bridge.Impl.ApplicantSchoolRepositoryImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaffControllerTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicantUserDetailsRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HR_Recruitment_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.garethabrahams.controller.Staff.*" />
+          <option name="PATTERN" value="com.garethabrahams.repository.bridge.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.garethabrahams.controller.Staff" />
-      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.controller.Staff.StaffControllerTest" />
-      <option name="METHOD_NAME" value="create" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.garethabrahams.repository.bridge.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.repository.bridge.Impl.ApplicantUserDetailsRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaffControllerTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApplicantWorkExperienceRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HR_Recruitment_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.garethabrahams.controller.Staff.*" />
+          <option name="PATTERN" value="com.garethabrahams.repository.bridge.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.garethabrahams.controller.Staff" />
-      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.controller.Staff.StaffControllerTest" />
-      <option name="METHOD_NAME" value="read" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.garethabrahams.repository.bridge.Impl" />
+      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.repository.bridge.Impl.ApplicantWorkExperienceRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StaffControllerTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.garethabrahams in HR_Recruitment_system" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HR_Recruitment_system" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.garethabrahams.controller.Staff.*" />
+          <option name="PATTERN" value="com.garethabrahams.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.garethabrahams.controller.Staff" />
-      <option name="MAIN_CLASS_NAME" value="com.garethabrahams.controller.Staff.StaffControllerTest" />
-      <option name="METHOD_NAME" value="update" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.garethabrahams" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StaffControllerTest" />
-        <item itemvalue="JUnit.ApplicantControllerTest" />
-        <item itemvalue="JUnit.StaffControllerTest.read" />
-        <item itemvalue="JUnit.StaffControllerTest.update" />
-        <item itemvalue="JUnit.StaffControllerTest.create" />
+        <item itemvalue="JUnit.com.garethabrahams in HR_Recruitment_system" />
+        <item itemvalue="JUnit.ApplicantWorkExperienceRepositoryImplTest" />
+        <item itemvalue="JUnit.ApplicantUserDetailsRepositoryImplTest" />
+        <item itemvalue="JUnit.ApplicantSchoolRepositoryImplTest" />
+        <item itemvalue="JUnit.ApplicantRoleRepositoryImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -541,7 +749,8 @@
       <workItem from="1565803237714" duration="2248000" />
       <workItem from="1566402051678" duration="2760000" />
       <workItem from="1568574639309" duration="2172000" />
-      <workItem from="1568655280943" duration="11460000" />
+      <workItem from="1568655280943" duration="18712000" />
+      <workItem from="1569866859713" duration="46657000" />
     </task>
     <task id="LOCAL-00001" summary="Second Commit">
       <created>1554919571208</created>
@@ -662,43 +871,50 @@
       <option name="project" value="LOCAL" />
       <updated>1560352951467</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Assignment 11: Security">
+      <created>1568758472762</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1568758472762</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 19m 18s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="ApplicantGenderRepositoryImplTest - 2019.10.01 at 22h 44m 03s.xml">
+      <configuration name="ApplicantGenderRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 20m 32s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="ApplicantOutcomeRepositoryImplTest - 2019.10.01 at 22h 48m 03s.xml">
+      <configuration name="ApplicantOutcomeRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 24m 00s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="ApplicantQualificationRepositoryImplTest - 2019.10.01 at 22h 52m 10s.xml">
+      <configuration name="ApplicantQualificationRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 24m 29s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="ApplicantRaceRepositoryImplTest - 2019.10.01 at 22h 55m 08s.xml">
+      <configuration name="ApplicantRaceRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_update - 2019.09.16 at 23h 27m 24s.xml">
-      <configuration name="StaffControllerTest.update" configurationId="JUnit" />
+    <history-entry file="ApplicantRoleRepositoryImplTest - 2019.10.01 at 22h 58m 23s.xml">
+      <configuration name="ApplicantRoleRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_update - 2019.09.16 at 23h 28m 22s.xml">
-      <configuration name="StaffControllerTest.update" configurationId="JUnit" />
+    <history-entry file="ApplicantSchoolRepositoryImplTest - 2019.10.01 at 23h 01m 50s.xml">
+      <configuration name="ApplicantSchoolRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_update - 2019.09.16 at 23h 29m 02s.xml">
-      <configuration name="StaffControllerTest.update" configurationId="JUnit" />
+    <history-entry file="ApplicantUserDetailsRepositoryImplTest - 2019.10.01 at 23h 06m 32s.xml">
+      <configuration name="ApplicantUserDetailsRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 29m 47s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="ApplicantWorkExperienceRepositoryImplTest - 2019.10.01 at 23h 09m 45s.xml">
+      <configuration name="ApplicantWorkExperienceRepositoryImplTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StaffControllerTest_read - 2019.09.16 at 23h 30m 13s.xml">
-      <configuration name="StaffControllerTest.read" configurationId="JUnit" />
+    <history-entry file="com_garethabrahams_in_HR_Recruitment_system - 2019.10.01 at 23h 10m 02s.xml">
+      <configuration name="com.garethabrahams in HR_Recruitment_system" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ApplicantControllerTest - 2019.09.16 at 23h 35m 07s.xml">
-      <configuration name="ApplicantControllerTest" configurationId="JUnit" />
+    <history-entry file="com_garethabrahams_in_HR_Recruitment_system - 2019.10.01 at 23h 10m 39s.xml">
+      <configuration name="com.garethabrahams in HR_Recruitment_system" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188507000" />
+    <option name="totallyTimeSpent" value="242416000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,7 +928,45 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.33661118" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.25945538" />
+      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25746268" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5005417" side_tool="true" weight="0.25746268" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.33060557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.21767594" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.21767594" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49924356" weight="0.20294599" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Duplicate detector" order="14" weight="0.32936078" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.3290469" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.34266263" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25746268" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -723,7 +977,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.41243863" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -743,49 +997,11 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.3290469" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
       <window_info anchor="right" id="Bean Validation" order="10" weight="0.32980332" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.2987897" />
-      <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.25746268" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.5005417" side_tool="true" weight="0.25746268" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924356" visible="true" weight="0.42880523" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.3289689" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49924356" weight="0.21776815" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" weight="0.21767594" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49924356" weight="0.20368364" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
-      <window_info anchor="bottom" id="Duplicate detector" order="15" weight="0.32936078" />
-      <window_info anchor="bottom" id="Java Enterprise" order="16" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32942432" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -808,348 +1024,435 @@
     <MESSAGE value="POM update, with the Spring boot dependencies Commit 2" />
     <MESSAGE value="Assignment 9: Controllers and REST End Points - Part one" />
     <MESSAGE value="Assignment 9: Controllers and REST End Points - Part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Assignment 9: Controllers and REST End Points - Part 2" />
+    <MESSAGE value="Assignment 11: Security" />
+    <MESSAGE value="New project" />
+    <option name="LAST_COMMIT_MESSAGE" value="New project" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffCity.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffCityControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffCityController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffAddressControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffAddressController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffEmailController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffContactControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffContactController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Staff/StaffRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/AddressRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="58" column="59" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantWorkExperienceController.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffEmailControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/General/CourseController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ApplicantRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#896#897#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/General/CourseControllerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantRepositoryImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/ContactRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/EmailRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/GenderRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/OutcomeRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/QualificationRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RaceRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/RoleRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/SchoolRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/WorkExperienceRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantEmailRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantContactRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="19" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantGenderRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="19" selection-start-line="19" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/QualificationFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="8" selection-start-line="13" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/RaceFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantQualificationRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="157">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantOutcomeRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="62" column="3" selection-start-line="62" selection-start-column="3" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="19" selection-end-line="68" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Staff/StaffFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRoleRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="157">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/Staff/StaffFactoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/SchoolFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/IRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantSchoolRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="157">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Staff/Staff.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/UserDetailsFactoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="118" column="12" selection-start-line="118" selection-start-column="12" selection-end-line="118" selection-end-column="12" />
+        <state relative-caret-position="153">
+          <caret line="13" column="8" selection-start-line="13" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffContactServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantUserDetailsRepositoryImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-117">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantRaceRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="19" selection-end-line="68" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/factory/WorkExperienceFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="8" selection-start-line="12" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/bridge/Impl/ApplicantWorkExperienceRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/IService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/Impl/Applicant/ApplicantAddressRepositoryImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="44" column="17" lean-forward="true" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.uml">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>com.garethabrahams.model</OriginalElement>
-          <nodes>
-            <node x="" y="">com.garethabrahams.model.Applicant</node>
-            <node x="" y="">com.garethabrahams.model.Staff</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.17500000000000002" x="1509.0" y="1210.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE-sources.jar!/org/springframework/http/converter/json/AbstractJackson2HttpMessageConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="295" selection-start-line="295" selection-end-line="295" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/indexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/ApplicantApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HR_System.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/UsernameServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/General/RolesServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/ApplicantAddressRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/model/Applicant/Applicant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1644">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/factory/Applicant/ApplicantCityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/ApplicantAddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Applicant/Impl/ApplicantAddressRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="64" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Applicant/Impl/ApplicantAddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/security/RecruitmentSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/service/Impl/Applicant/ApplicantAddressServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/Impl/StaffServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/Staff/StaffService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Applicant/ApplicantController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/Impl/StaffRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/repository/Staff/StaffRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/controller/Staff/StaffController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Staff/StaffControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="57" column="81" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/controller/Applicant/ApplicantControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/garethabrahams/repository/impl/UserDetailsRepositoryImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ApplicantService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/AddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/GenderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/OutcomeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/QualificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RaceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/SchoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/UserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/WorkExperienceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantAddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantEmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantGenderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantOutcomeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantQualificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRaceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantSchoolService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantWorkExperienceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/garethabrahams/service/bridge/ApplicantUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
